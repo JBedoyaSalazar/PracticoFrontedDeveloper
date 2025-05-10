@@ -11,7 +11,6 @@
 
 body{
     font-family: "Quicksand", sans-serif;
-    font-weight: bold;
 }
 
 .title{
@@ -43,13 +42,10 @@ body{
 
 .order{
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     gap: 16px;
     align-items: center;
-    background-color: var(--textInputField);
-    margin-bottom: 24px;
-    border-radius: 8px;
-    padding: 0 24px;
+    margin-bottom: 12px;
 }
 
 .order p:nth-child(1){
@@ -70,32 +66,4 @@ body{
 .order p:nth-child(2){
     text-align: end;
     font-weight: 500;
-}
-
-.shoppingCart{
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;;
-    gap: 10px;
-    margin-bottom: 24px;
-    align-items: center;
-}
-
-.shoppingCart figure{
-    margin: 0;
-}
-
-.shoppingCart figure img{
-    width: 70px;
-    height: 70px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.shoppingCart p:nth-child(2){
-    color: var(--veryLightPink);
-}
-
-.shoppingCart p:nth-child(3){
-    font-size: var(--md);
-    font-weight: bold;
 }

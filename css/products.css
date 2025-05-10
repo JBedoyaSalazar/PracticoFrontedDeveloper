@@ -1,0 +1,109 @@
+:root {
+    --veryLightPink: #c7c7c7;
+    --textInputField: #f7f7f799;
+    --hospitalGreen: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+}
+
+.productDetail{
+    width: 360px;
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
+}
+
+.productDetailClose{
+    background-color: var(--white);
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    border-radius: 50%;
+    z-index: 2;
+    padding: 12px;
+}
+
+.productDetailClose img{
+    position: relative;
+    left: 2px;
+}
+
+.productDetailClose:hover{
+    cursor: pointer;
+}
+
+.productDetail > img:nth-child(2){
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 8px 8px;
+}
+
+.productInfo{
+    margin: 24px 24px 0 24px;
+
+}
+
+.productInfo p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.productInfo p:nth-child(2){
+    font-weight: 300;
+    color: var(--veryLightPink);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.productInfo p:nth-child(3){
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: justify;
+}
+
+.primaryButton{
+    background-color: var(--hospitalGreen);
+    color: var(--white);
+    border-radius: 8px;
+    border: none;
+    height: 44px;
+    width: 100%;
+    font-size: var(--md);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addToCartButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 640px){
+    .productDetail{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productDetail > img:nth-child(2) {
+        width: 100vw;
+    }
+}

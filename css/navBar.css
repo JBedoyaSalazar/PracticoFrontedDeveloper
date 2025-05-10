@@ -1,0 +1,106 @@
+:root {
+    --veryLightPink: #c7c7c7;
+    --textInputField: #f7f7f799;
+    --hospitalGreen: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--veryLightPink);
+}
+
+.menu{
+    display: none;
+}
+
+.logo{
+    width: 150px;
+}
+
+.navBarLeft ul, .navBarRight ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navBarLeft{
+    display: flex;
+}
+
+.navBarLeft ul{
+    display: flex;
+    margin-left: 12px;
+}
+
+.navBarLeft ul li a, .navBarRight ul li{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.navBarLeft ul li a:hover, .navBarRight ul li:hover{
+    border: 1px solid var(--hospitalGreen);
+    border-radius: 8px;
+    color: var(--hospitalGreen);
+}
+
+.navBarRight ul .navBarEmail{
+    color: var(--veryLightPink);
+    font-size: var(--sm);
+    margin-right: 12px;
+}
+
+.navBarRight ul .navBarShoppingCart{
+    position: relative;
+}
+
+.navBarRight ul .navBarShoppingCart div{
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospitalGreen);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarRight ul .navBarShoppingCart:hover{
+    color: var(--black);
+}
+
+@media (max-width: 640px){
+    .menu{
+        display: block;
+    }
+
+    .navBarLeft ul{
+        display: none;
+    }
+
+    .navBarRight ul .navBarEmail{
+        display: none;
+    }
+}
